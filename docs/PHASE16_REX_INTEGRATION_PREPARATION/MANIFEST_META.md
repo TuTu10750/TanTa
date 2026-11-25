@@ -1,0 +1,26 @@
+# MANIFEST_META.md
+# PHASE16_REX_INTEGRATION_PREPARATION
+# Created: 2026-11-24 14:35:48 +0800
+
+## 新文件记录（名称 | 大小 | SHA256 | 用途）
+
+| 文件名 | 字节 | SHA256 | 用途 |
+|---|---:|---|---|
+| 01_REX_INTEGRATION_BASELINE.md | 4044 | 21805b1d493ee52cc5dac4ddad7b602c5ad3f6874a2a0661e1302594eb4ee1b9 | BATCH01 Rex 工程现状盘点（源码不可访问，环境限制） |
+| 02_TANTA_STATIC_CONTRACT.md | 4288 | ad4b934b2fbaea989b7561dd9606648e51de40836f828ad0185e3e2cdd4194a3 | BATCH02 探他静态契约（接口/端口/参数/模型/未验证项） |
+| 03_TANTA_REX_ARCHITECTURE.md | 4726 | cf5aa3a4b75b7efdd16736e3b236652aef629c6146fca888c07ad72b79da72e4 | BATCH03 接入架构设计蓝图（DESIGN 级，非实体模块） |
+| 04_MOCK_VALIDATION_REPORT.md | 3560 | c3d7836c2d0a56f0514b12786040548bba4e012a6aa8d8af5298eae9af554486 | BATCH04 MOCK 验证报告（14/14 PASS，含首次失败记录） |
+| 05_DEPENDENCY_BOUNDARY.md | 2936 | 286a4f5856e94ab75665d14571a7dae702a79f837ecc2456918b148c7bb0b6cf | BATCH05 依赖边界（A/B/C/D 四类） |
+| 06_FINAL_REPORT.md | 4249 | a4e473ecedcf03063819bca86d1e7c88418508773e2525a2c209cfaf875f7bb5 | BATCH06 最终报告（13 项回答，PHASE16_BLOCKED） |
+| MOCK_TEST_CASES.json | 1200 | 619c5e908d84ee55b29041d41c1bb3577dda2c74ec2bd75b38c5b10e047ed78e | 9 组 MOCK 测试数据（与真实证据分离） |
+| mock_validator.py | 5148 | 3325de0d6f84af145b6573e6e887e10cc7e1a212a87bfc4ea582290035d1f9ef | 离线解析/状态验证脚本（无网络） |
+| MANIFEST.sha256 | 729 | — | 标准哈希清单 |
+
+## 历史文件（本轮未修改）
+- ENGINEERING_MASTER_REPORT.md
+- tanta_reverse_archive.md
+- PHASE15.5_STATIC_EVIDENCE_CHALLENGE/（全部）
+- 原始 APK / DEX / SO、xl-live 冻结模块（本环境无实体，未触碰）
+
+## 证据类型
+本目录所有报告使用 ACTUAL_VERIFICATION / EXISTING_CODE_REFERENCE / EXISTING_EVIDENCE_REFERENCE / DESIGN / INFERENCE / UNRESOLVED 标记，未把 MOCK 写成真实数据，未把引用写成重新验证。

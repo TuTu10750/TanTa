@@ -1,0 +1,197 @@
+C:\Users\Fox-OS>frida -U -p 2197 -l D:\浏览器\tanta-hook-v14.js
+     ____
+    / _  |   Frida 17.26.2 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Andarium Virtual Device (id=192.168.1.11:5555)
+Attaching...
+[hook] okhttp3.ResponseBody.string
+[skip] BufferedReader: Error: readLine(): has more than one overload, use .overload(<signature>) to choose from:
+        .overload()
+        .overload('boolean')
+[hook] com.alibaba.fastjson.JSON.parseObject(String)
+[hook] com.alibaba.fastjson.JSON.parseArray(String)
+[hook] java.net.URL.openConnection
+[info] HttpCallback 是接口，跳过
+[info] v14 已装好 4 个 Java hook
+[info] 刷首页 1 分钟，然后输 showStats()
+[Andarium Virtual Device::PID::2197 ]-> [URL] http://127.0.0.1:37377/appapi/?service=Home.getClassLiveCursor&language=zh-cn&liveclassid=1&uid=2001231&token=8c36ae41906ea08f49861c9f84fcc636&cursor=eyJyIjoiYzkyMWFkMDQ4MTRkNmUyOCIsIm8iOjkwfQ&signplus=204ac0557cdea9ac6d158c57a2b40422d882a46294f34073ba3678fc75fee73d
+[HIT] #1 fastjson.parseObject
+[HIT] #2 fastjson.parseObject
+[URL] http://127.0.0.1:37377/appapi/?service=Home.getClassLiveCursor&language=zh-cn&liveclassid=1&uid=2001231&token=8c36ae41906ea08f49861c9f84fcc636&cursor=eyJyIjoiYzkyMWFkMDQ4MTRkNmUyOCIsIm8iOjEyMH0&signplus=c857b7d1fb1575fa5096113174d9643451e134705534265cde6de4af105a0ab2
+[HIT] #3 fastjson.parseObject
+[HIT] #4 fastjson.parseObject
+[Andarium Virtual Device::PID::2197 ]-> showStats()
+
+########## Java 层命中 ##########
+总共 4 条
+  fastjson.parseObject x4
+##########################
+
+[Andarium Virtual Device::PID::2197 ]-> showPage(1)
+
+===== 第 1 页 (4-4 / 4) =====
+
+--- [3] fastjson.parseObject ---
+{"has_more":true,"latest_revision":"3b17b1ad6de9bde1","list":[{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20261028/1817466/91134839.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"5109","pkuid":0,"room_id":"live_1817466","stream":"1817466_1795529924","thumb":"https://tanta-0928.kkdsdj.cn/avatar/20261028/1817466/91134839.webp","title":"刷礼物提要求加v接私","type":2,"type_val":"99","uid":1817466,"user_nickname":"阿陈"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20261120/137836/855013.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"4358","pkuid":0,"room_id":"137836","stream":"137836_1795529686","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20261120/137836/331188.webp","title":".","type":0,"type_val":"0","uid":137836,"user_nickname":"阿周"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20260606/592035/330537.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"3789","pkuid":0,"room_id":"592035","stream":"592035_1795529501","thumb":"https://tanta-0928.kkdsdj.cn/avatar/20260606/592035/330537.webp","title":"户外偷拍","type":2,"type_val":"30","uid":592035,"user_nickname":"挺好看"},{"avatar":"https://tanta-0928.kkdsdj.cn/upload/admin/20250818/86fdebc21f6906efd27364d817da1d53.jpg","goodNum":"","level_anchor":"1","live_platform":4,"nums":"1719","pkuid":0,"room_id":"1795172","stream":"1795172_1795529414","thumb":"https://tanta-0928.kkdsdj.cn/upload/admin/20250818/86fdebc21f6906efd27364d817da1d53.jpg","title":"真的好累好累","type":0,"type_val":"0","uid":1795172,"user_nickname":"游客_1795172"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20261123/203317/875182.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"1199","pkuid":0,"room_id":"203317","stream":"203317_1795529225","thumb":"https://tanta-0928.kkdsdj.cn/avatar/20261123/203317/875182.webp","title":"胖大叔","type":0,"type_val":"0","uid":203317,"user_nickname":"传宇哥"},{"avatar":"https://tanta-0928.kkdsdj.cn/upload/admin/20250319/361ad82021b7355199ce8200c3ecbed0.jpeg","goodNum":"","level_anchor":"1","live_platform":4,"nums":"2978","pkuid":0,"room_id":"live_208501","stream":"208501_1795528872","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20261105/208501/70808620.webp","title":"刷礼物提要求，摩天轮🎡加微私有私","type":0,"type_val":"","uid":208501,"user_nickname":"退伍兵哥哥"},{"avatar":"https://tanta-0928.kkdsdj.cn/upload/admin/20250818/71e9c812a19b117ebe82b179147a8116.jpg","goodNum":"","level_anchor":"1","live_platform":4,"nums":"5181","pkuid":0,"room_id":"1671145","stream":"1671145_1795528830","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20260917/1671145/370365.webp","title":"户外勾引","type":0,"type_val":"0","uid":1671145,"user_nickname":"游客_1671145"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20260707/140882/03612017.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"1249","pkuid":0,"room_id":"140882","stream":"140882_1795528633","thumb":"https://tanta-0928.kkdsdj.cn/avatar/20260707/140882/03612017.webp","title":"看片加Q","type":0,"type_val":"0","uid":140882,"user_nickname":"熊
+...(截断)
+
+===== 翻页：showPage(2) =====
+
+[Andarium Virtual Device::PID::2197 ]-> showPage(0)
+
+===== 第 0 页 (1-3 / 4) =====
+
+--- [0] fastjson.parseObject ---
+{
+    "ret": 200,
+    "data": {
+        "code": 0,
+        "msg": "",
+        "info": [
+            {
+                "list": [
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/liveshow/20261118/1151293/49890.webp",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/avatar/20261116/1151293/961537.webp",
+                        "user_nickname": "陪陪你",
+                        "title": "男大宿舍偷偷播",
+                        "nums": "2501",
+                        "type": 0,
+                        "type_val": "0",
+                        "uid": 1151293,
+                        "stream": "1151293_1795532696",
+                        "live_platform": 4,
+                        "room_id": "1151293",
+                        "level_anchor": "1",
+                        "goodNum": "",
+                        "pkuid": 0
+                    },
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/liveshow/20261122/955863/45365.webp",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/avatar/20261106/955863/517763.webp",
+                        "user_nickname": "长沙暮归spa",
+                        "title": "长沙暮归spa",
+                        "nums": "2502",
+                        "type": 0,
+                        "type_val": "0",
+                        "uid": 955863,
+                        "stream": "955863_1795532684",
+                        "live_platform": 4,
+                        "room_id": "955863",
+                        "level_anchor": "1",
+                        "goodNum": "",
+                        "pkuid": 0
+                    },
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/upload/admin/20250818/ad00fd8a276cf7900ae8722ac6efab1c.jpg",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/upload/admin/20250818/ad00fd8a276cf7900ae8722ac6efab1c.jpg",
+                        "user_nickname": "quan666",
+                        "title": "quan quantity",
+                        "nums": "990",
+                        "type": 0,
+                        "type_val": "0",
+                        "uid": 1878018,
+                        "stream": "1878018_1795532606",
+                        "live_platform": 4,
+                        "room_id": "1878018",
+                        "level_anchor": "1",
+                        "goodNum": "",
+                        "pkuid": 0
+                    },
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/avatar/20260930/1669327/172519.webp",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/avatar/20260930/1669327/172519.webp",
+                        "user_nickname": "小王子回来了1",
+                        "title": "鸟洞勾引初中生",
+                        "nums": "1326",
+                        "type": 2,
+                        "type_val": "15",
+                        "uid": 1669327,
+                        "stream": "1669327_1795532589",
+...(截断)
+
+--- [1] fastjson.parseObject ---
+{"has_more":true,"latest_revision":"be575f5dbe1577e5","list":[{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20261116/1151293/961537.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"2501","pkuid":0,"room_id":"1151293","stream":"1151293_1795532696","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20261118/1151293/49890.webp","title":"男大宿舍偷偷播","type":0,"type_val":"0","uid":1151293,"user_nickname":"陪陪你"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20261106/955863/517763.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"2502","pkuid":0,"room_id":"955863","stream":"955863_1795532684","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20261122/955863/45365.webp","title":"长沙暮归spa","type":0,"type_val":"0","uid":955863,"user_nickname":"长沙暮归spa"},{"avatar":"https://tanta-0928.kkdsdj.cn/upload/admin/20250818/ad00fd8a276cf7900ae8722ac6efab1c.jpg","goodNum":"","level_anchor":"1","live_platform":4,"nums":"990","pkuid":0,"room_id":"1878018","stream":"1878018_1795532606","thumb":"https://tanta-0928.kkdsdj.cn/upload/admin/20250818/ad00fd8a276cf7900ae8722ac6efab1c.jpg","title":"quan quantity","type":0,"type_val":"0","uid":1878018,"user_nickname":"quan666"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20260930/1669327/172519.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"1326","pkuid":0,"room_id":"1669327","stream":"1669327_1795532589","thumb":"https://tanta-0928.kkdsdj.cn/avatar/20260930/1669327/172519.webp","title":"鸟洞勾引初中生","type":2,"type_val":"15","uid":1669327,"user_nickname":"小王子回来了1"},{"avatar":"https://tanta-0928.kkdsdj.cn/upload/admin/20250917/8d94210cdf10577d6a7b2d99555e6c55.jpg","goodNum":"","level_anchor":"1","live_platform":4,"nums":"1024","pkuid":0,"room_id":"1819104","stream":"1819104_1795532547","thumb":"https://tanta-0928.kkdsdj.cn/upload/admin/20250917/8d94210cdf10577d6a7b2d99555e6c55.jpg","title":"中年大叔、撸一会","type":0,"type_val":"0","uid":1819104,"user_nickname":"中年大叔、"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20260418/261364/730916.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"5114","pkuid":0,"room_id":"261364","stream":"261364_1795532522","thumb":"https://tanta-0928.kkdsdj.cn/avatar/20260418/261364/730916.webp","title":"挺好的","type":2,"type_val":"33","uid":261364,"user_nickname":"挺好的"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20251118/293059/39249755.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"3859","pkuid":0,"room_id":"live_293059","stream":"293059_1795532450","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20260926/293059/06699318.webp","title":"体育生福利私播原味","type":0,"type_val":"","uid":293059,"user_nickname":"直男翘臀s"},{"avatar":"https://tanta-0928.kkdsdj.cn/avatar/20261014/598440/277361.webp","goodNum":"","level_anchor":"1","live_platform":4,"nums":"1971","pkuid":0,"room_id":"598440","stream":"598440_1795532446","thumb":"https://tanta-0928.kkdsdj.cn/liveshow/20261116/598440/980401.webp","title":"大学生直播赚钱","type":0,"type_val":"0","uid":598440,"user_nicknam
+...(截断)
+
+--- [2] fastjson.parseObject ---
+{
+    "ret": 200,
+    "data": {
+        "code": 0,
+        "msg": "",
+        "info": [
+            {
+                "list": [
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/avatar/20261028/1817466/91134839.webp",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/avatar/20261028/1817466/91134839.webp",
+                        "user_nickname": "阿陈",
+                        "title": "刷礼物提要求加v接私",
+                        "nums": "5109",
+                        "type": 2,
+                        "type_val": "99",
+                        "uid": 1817466,
+                        "stream": "1817466_1795529924",
+                        "live_platform": 4,
+                        "room_id": "live_1817466",
+                        "level_anchor": "1",
+                        "goodNum": "",
+                        "pkuid": 0
+                    },
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/liveshow/20261120/137836/331188.webp",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/avatar/20261120/137836/855013.webp",
+                        "user_nickname": "阿周",
+                        "title": ".",
+                        "nums": "4358",
+                        "type": 0,
+                        "type_val": "0",
+                        "uid": 137836,
+                        "stream": "137836_1795529686",
+                        "live_platform": 4,
+                        "room_id": "137836",
+                        "level_anchor": "1",
+                        "goodNum": "",
+                        "pkuid": 0
+                    },
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/avatar/20260606/592035/330537.webp",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/avatar/20260606/592035/330537.webp",
+                        "user_nickname": "挺好看",
+                        "title": "户外偷拍",
+                        "nums": "3789",
+                        "type": 2,
+                        "type_val": "30",
+                        "uid": 592035,
+                        "stream": "592035_1795529501",
+                        "live_platform": 4,
+                        "room_id": "592035",
+                        "level_anchor": "1",
+                        "goodNum": "",
+                        "pkuid": 0
+                    },
+                    {
+                        "thumb": "https://tanta-0928.kkdsdj.cn/upload/admin/20250818/86fdebc21f6906efd27364d817da1d53.jpg",
+                        "avatar": "https://tanta-0928.kkdsdj.cn/upload/admin/20250818/86fdebc21f6906efd27364d817da1d53.jpg",
+                        "user_nickname": "游客_1795172",
+                        "title": "真的好累好累",
+                        "nums": "1719",
+                        "type": 0,
+                        "type_val": "0",
+                        "uid": 1795172,
+                        "stream": "1795172_1795529414",
+
+...(截断)
+
+===== 翻页：showPage(1) =====
+
+[Andarium Virtual Device::PID::2197 ]->

@@ -1,0 +1,30 @@
+{
+  "MOCK_LIST_NORMAL": {
+    "code": 0,
+    "msg": "",
+    "info": [
+      {"id": "1001", "username": "mock_anchor_a", "title": "MOCK Room A", "avatar": "https://MOCK.invalid/a.png", "isLive": 1, "viewers": 42, "status": "public"},
+      {"id": "1002", "username": "mock_anchor_b", "title": "MOCK Room B", "avatar": "https://MOCK.invalid/b.png", "isLive": 0, "viewers": 0, "status": "offline"}
+    ]
+  },
+  "MOCK_LIST_EMPTY": {"code": 0, "msg": "", "info": []},
+  "MOCK_LIST_NULL_INFO": {"code": 0, "msg": "", "info": null},
+  "MOCK_LIST_MISSING_FIELDS": {
+    "code": 0,
+    "info": [
+      {"id": "2001"},
+      {"id": "2002", "username": "mock_b", "viewers": "not_a_number"},
+      {"title": "no id"}
+    ]
+  },
+  "MOCK_LIST_TYPE_ERROR": {"code": "0", "info": {"unexpected": "object_not_array"}},
+  "MOCK_ERROR_RESPONSE": {"code": 1001, "msg": "MOCK invalid request", "info": null},
+  "MOCK_DETAIL_NORMAL": {
+    "code": 0,
+    "info": {"id": "1001", "title": "MOCK Room A", "stream_name": "mock_stream_1001", "status": "public"}
+  },
+  "MOCK_VIDEO_ITEM": {
+    "id": "v1", "title": "MOCK Video", "cover": "https://MOCK.invalid/v.jpg",
+    "duration": 300, "accessMode": "paid", "cost": 99
+  }
+}

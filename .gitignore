@@ -1,0 +1,8 @@
+*.pcap
+*.apk
+*.so
+*.dex
+node_modules/
+.DS_Store
+*_ALL_JAVA.txt
+*_P5_ALL_JAVA.txt
