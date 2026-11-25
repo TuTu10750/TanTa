@@ -1,4 +1,4 @@
-*.apk
+
 node_modules/
 .DS_Store
 *_ALL_JAVA.txt
