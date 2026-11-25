@@ -1,0 +1,57 @@
+package defpackage;
+
+/* loaded from: /tmp/classes2.dex */
+public abstract class u73 {
+    public static int A = 2131558782;
+    public static int B = 2131558783;
+    public static int C = 2131558784;
+    public static int D = 2131558785;
+    public static int E = 2131558786;
+    public static int F = 2131558787;
+    public static int G = 2131558788;
+    public static int H = 2131558790;
+    public static int I = 2131558793;
+    public static int J = 2131558794;
+    public static int K = 2131558825;
+    public static int L = 2131558912;
+    public static int M = 2131558921;
+    public static int N = 2131558979;
+    public static int O = 2131559063;
+    public static int P = 2131559091;
+    public static int Q = 2131559093;
+    public static int R = 2131559120;
+    public static int S = 2131559121;
+    public static int T = 2131559123;
+    public static int U = 2131559124;
+    public static int V = 2131559232;
+    public static int W = 2131559233;
+    public static int X = 2131559246;
+    public static int Y = 2131559248;
+    public static int Z = 2131559251;
+    public static int a = 2131558458;
+    public static int b = 2131558459;
+    public static int c = 2131558460;
+    public static int d = 2131558469;
+    public static int e = 2131558470;
+    public static int f = 2131558565;
+    public static int g = 2131558594;
+    public static int h = 2131558595;
+    public static int i = 2131558598;
+    public static int j = 2131558599;
+    public static int k = 2131558600;
+    public static int l = 2131558601;
+    public static int m = 2131558623;
+    public static int n = 2131558658;
+    public static int o = 2131558662;
+    public static int p = 2131558664;
+    public static int q = 2131558672;
+    public static int r = 2131558673;
+    public static int s = 2131558680;
+    public static int t = 2131558683;
+    public static int u = 2131558684;
+    public static int v = 2131558685;
+    public static int w = 2131558688;
+    public static int x = 2131558693;
+    public static int y = 2131558767;
+    public static int z = 2131558781;
+}
